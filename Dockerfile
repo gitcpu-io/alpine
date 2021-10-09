@@ -45,3 +45,7 @@ ENV TZ=Asia/Shanghai
 RUN apk add --no-cache tzdata && ln -sf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apk add --upgrade sysstat
+
+RUN apk add --upgrade tcpdump
+
+RUN apk add --upgrade perf procps
