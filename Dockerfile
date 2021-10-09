@@ -48,4 +48,7 @@ RUN apk add --upgrade sysstat
 
 RUN apk add --upgrade tcpdump
 
-RUN apk add --upgrade perf procps
+RUN apk add --upgrade perf procps linux-tools
+
+##安装bpf
+#RUN apk add --upgrade bcc bcc-tools
