@@ -19,4 +19,6 @@ RUN apk add --upgrade --no-cache openssl openssl-dev nghttp2-dev ca-certificates
 RUN apk add --upgrade --no-cache busybox-extras curl sysstat tcpdump perf procps linux-tools wrk
 
 ##安装bpf
-#RUN apk add --upgrade bcc bcc-tools dev86
+#RUN apk add --upgrade bcc bcc-tools && ln -s $(which python3) /usr/bin/python
+
+#RUN cp -r /usr/share/bcc/tools/* /usr/bin/
