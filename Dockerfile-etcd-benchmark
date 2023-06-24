@@ -1,9 +1,0 @@
-#使用朱大仙儿 build的带有curl的apline
-FROM rubinus/alpine-nb:v1.0
-LABEL maintainer="rubinus.chu@mail.com"
-
-#添加可执行文件
-COPY benchmark /bin/benchmark
-
-RUN ["chmod", "+x", "/bin/benchmark"]
-
